@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root{
+  --main-color:rgb(171,52,52);
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #title {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+  }
+}
+
+#top-boundary{
+  background-color: var(--main-color);
+  height: 35px;
+}
+
+#home_button{
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+#bottom-boundary{
+  background-color: var(--main-color);
+  height: 35px;
+  margin-top: auto;
+}
+
+#title-arrow-container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding-top: 40px;
+}
+
+#arrow_button img{
+  height: 100%;
+}
+
+#arrow_button{
+  margin-right: 10px;
+  height: 100%;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
+
+#paymentAmountLabel, #paymentAmount {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#paymentAmount{
+  margin-left: 10px;
+  color: red;
+}
+
+
+#line {
+  border-bottom: 2px solid black;
+  width: 200px; /* Adjust line width as needed */
+}
+
+#cancelbutton {
+  position: absolute;
+  bottom: 70px;
+  left: 44%;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.black {
+  color: black;
+}
