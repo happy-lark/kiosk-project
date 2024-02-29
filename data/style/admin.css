@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  --main-color: rgb(171, 52, 52);
+}
+
+#top-boundary,
+#bottom-boundary {
+  background-color: var(--main-color);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+#top-boundary {
+  top: 0;
+  height: 100px;
+}
+
+#bottom-boundary {
+  bottom: 0;
+  height: 35px;
+}
+
+#home_button {
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* 관리자용 문구 조절 */
+#top-boundary span {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#titlemain {
+  position: absolute;
+  top: 18%;
+  left: 2%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px; /* Adjusting size */
+  margin-left:20px;
+  position:absolute;
+}
+
+.comment {
+  font-weight: bold;
+  color: black; /* Change font color */
+  text-align: center;
+  font-size: 1.5em; /* Adjusting size */
+  margin: 10px; /* Add margin */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make display inline-block */
+  padding: 25px 35px; /* FOR BUTTON SIZE */
+  border-radius: 25px; /* Make rounder */
+  background-color: #c5b4b4; /* Light grey background */
+}
+
+#end{
+  position: absolute;
+  top:80%;
+  left:40%;
+
+
+}
