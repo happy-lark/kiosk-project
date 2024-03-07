@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>키오스크 간편결제 선택 바코드스캔</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      /* 배경색 변경 */
+    }
+
+    .back-button {
+      position: absolute;
+      top: 8%;
+      left: 0%;
+      width: 50px;
+    }
+
+    .title {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #7D7878;
+      font-size: 40px;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .top-line,
+    .bottom-line {
+      position: fixed;
+      left: 0;
+      right: 0;
+      height: 35px;
+      background-color: #B27B7B;
+      z-index: 999;
+    }
+
+    .top-line {
+      top: 0;
+    }
+
+    .bottom-line {
+      bottom: 0;
+    }
+
+    .text {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 20%;
+      color: black;
+      font-weight: bold;
+    }
+
+    .line {
+      position: absolute;
+      width: 80%;
+      height: 1.5px;
+      background-color: black;
+    }
+
+    .rectangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      /* 가로 크기 수정 */
+      height: 450px;
+      /* 세로 크기 수정 */
+      margin-top: 3%;
+      background-color: #7E7979;
+      z-index: 998;
+      display: flex;
+      border-radius: 15px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cancle-button {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* 버튼을 가운데 정렬 */
+      width: 30%;
+      height: 50px;
+      /* 버튼의 높이 변경 */
+      background-color: #D9D9D9;
+      color: black;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-line"></div>
+  <div class="bottom-line"></div>
+  <img src='../data/img/icons/back.png' class="back-button">
+  <div class="title">간편결제</div>
+  <div class="rectangle">
+    <div class="text" style="top: 15px; left:-33%;">결제금액</div>
+    <div class="text" style="top: 15px; left: 33%; color: red;">3000원</div>
+    <div class="line" style="top: 40px;"></div>
+    <div class="text" style="top: 60px; font-size: 23px; color: white;">바코드를 다음과 같이 스캔해주세요</div>
+    <img src="../data/img/icons/barcodeScanEx.png" style="width: 250px; height: auto; margin-top: 3%;">
+    <button class="cancle-button" style="top: 93%; width: 120px; height: 40px;">
+      취소
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
