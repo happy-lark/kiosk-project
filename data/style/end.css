@@ -1,0 +1,23 @@
+#top-boundary,
+#bottom-boundary {
+  background-color: var(--main-color);
+  height: 35px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+#top-boundary {
+  top: 0;
+}
+
+#bottom-boundary {
+  bottom: 0;
+}
+
+#comment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

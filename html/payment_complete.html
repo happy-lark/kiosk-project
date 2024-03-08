@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Complete</title>
+  <link rel="stylesheet" href="../data/style/utility.css" type="text/css"/>
+  <link rel="stylesheet" href="../data/style/payment_complete.css" type="text/css"/>
+
+</head>
+<body>
+  <div id="top-boundary">
+  </div>
+
+  <div class="container">
+    <span id="paymentAmountLabel">결제금액: </span>
+    <span id="paymentAmount">2000원</span>
+    <div id="line"></div>
+  </div>
+
+  <div id="comment">
+    <img src="../data/img/buttons/결제완료.png" width="30%">
+  </div>
+
+  <div id="order_num">
+    주문번호: 205
+  </div>
+
+  <div class="button-group">
+    <a href="#" class="button">영수증 출력하기</a>
+    <a href="#" class="button">주문번호만 출력하기</a>
+  </div>
+  
+  <div id="countdown_comment">
+    결제완료 화면은 잠시 후 자동으로 닫힙니다.
+  </div>
+  <div id="countdown" class="black"></div> <!-- Added class "black" -->
+
+  <div id="bottom-boundary"></div>
+  <script src="../js/card.js"></script>
+</body>
+</html>
