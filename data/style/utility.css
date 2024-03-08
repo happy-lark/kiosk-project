@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Alata", sans-serif;
+
 }
 
 :root {

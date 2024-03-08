@@ -1,11 +1,5 @@
   /* 위,아래 빨간선 조정 필요, html 추가하면 글자 색
   바뀌는 것도 나중에 다시 고치기 */
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .error {
   font-size: 32px;
   font-weight: bold;
