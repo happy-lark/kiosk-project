@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Alata", sans-serif;
-}
-
 .thumbnail-container {
   position: relative;
 }
