@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .logo {
+      position: fixed;
+      top: 5px;
+      left: 10px;
+      width: 30px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .previous-button {
+      position: absolute;
+      top: 40px;
+      left: 0%;
+      width: 30px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .next-button {
+      position: absolute;
+      top: 40px;
+      left: 98%;
+      width: 30px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .top-line,
+    .bottom-line {
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: #AB3434;
+      z-index: 997;
+    }
+
+    .top-line {
+      top: 0;
+      height: 70px;
+    }
+
+    .bottom-line {
+      bottom: 0;
+      height: 40px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .text {
+      top: 40px;
+      position: absolute;
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    .chosen {
+      position: absolute;
+      text-align: center;
+      color: red;
+      width: 130px;
+      height: 25px;
+      background-color: white;
+      border-radius: 15px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-button {
+      position: absolute;
+      /* transform: translate(-50%, -50%);
+       버튼을 가운데 정렬 */
+      width: 150px;
+      height: 230px;
+      background-color: #D9D9D9;
+      color: black;
+      border-radius: 15px;
+      cursor: pointer;
+      margin-top: 20px;
+      /* 각 버튼 간격 조절 */
+    }
+
+    .menu-pic {
+      position: absolute;
+      top: 5%;
+      transform: translateX(-50%);
+      width: auto;
+      height: 130px;
+    }
+
+    .menu-text {
+      position: absolute;
+      width: 100%;
+      top: 73%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 15px;
+      font-weight: bold;
+
+    }
+
+    .newMark {
+      position: absolute;
+      width: 80px;
+      height: auto;
+    }
+
+    .minus {
+      position: absolute;
+      width: 60px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <img src='../data/img/icons/home.png' class="logo">
+  <img src='../data/img/icons/back.png' class='previous-button'>
+  <img src='../data/img/icons/next.png' class='next-button'>
+  <div class='top-line'></div>
+  <div class='bottom-line'>관리자용</div>
+  <div class='menubar'>
+    <div class='text' style="left: 10%;">추천메뉴</div>
+    <div class='text' style="left: 30%;">
+      <div class='chosen'>커피</div>
+    </div>
+    <div class='text' style="left: 50%;">디카페인</div>
+    <div class='text' style="left: 70%;">스무디/프라페</div>
+    <div class='text' style="left: 90%;">티(Tea)</div>
+  </div>
+  <button class="menu-button" style="top: 10%; left: 5%;">
+    <img src="../data/img/pics/IcedAmericano.png" class='menu-pic'>
+    <img src="../data/img/icons/new.png" class='newMark' style="top: -14%; left: -15%;">
+    <img src="../data/img/icons/menuMinus.png" class='minus' style="top: -7%; left: 65%;">
+    <div class="menu-text">(Ice)아메리카노</div>
+    <div class="menu-text" style='top: 83%; color: red;'>2500원</div>
+  </button>
+  <button class="menu-button" style="top: 10%; left: 20%;">
+    <img src="../data/img/pics/IcedLatte.png" class='menu-pic'>
+    <img src="../data/img/icons/menuMinus.png" class='minus' style="top: -7%; left: 65%;">
+    <div class="menu-text">(Ice)카페라떼</div>
+    <div class="menu-text" style='top: 83%; color: red;'>3000원</div>
+  </button>
+</body>
+
+</html>
