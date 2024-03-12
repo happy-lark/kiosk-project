@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>관리자용_기존메뉴 삭제확인팝업</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .logo {
+      position: fixed;
+      top: 5px;
+      left: 10px;
+      width: 30px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .previous-button {
+      position: absolute;
+      top: 40px;
+      left: 0%;
+      width: 30px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .next-button {
+      position: absolute;
+      top: 40px;
+      left: 98%;
+      width: 30px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .top-line,
+    .bottom-line {
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: #B27B7B;
+      z-index: 997;
+    }
+
+    .top-line {
+      top: 0;
+      height: 70px;
+    }
+
+    .bottom-line {
+      bottom: 0;
+      height: 40px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .text {
+      top: 40px;
+      position: absolute;
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    .chosen {
+      position: absolute;
+      text-align: center;
+      color: #B27B7B;
+      width: 130px;
+      height: 25px;
+      background-color: white;
+      border-radius: 15px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .rectangle {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      /* 가로 크기 수정 */
+      height: 500px;
+      /* 세로 크기 수정 */
+      margin-top: 3%;
+      background-color: #A99F9F;
+      z-index: 998;
+      display: flex;
+      border-radius: 15px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .yes-button {
+      position: absolute;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      /* 버튼을 가운데 정렬 */
+      width: 120px;
+      height: 40px;
+      background-color: #AB3434;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .no-button {
+      position: absolute;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      /* 버튼을 가운데 정렬 */
+      width: 120px;
+      height: 40px;
+      background-color: #ECE2E2;
+      color: black;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .popupText {
+      position: absolute;
+      color: black;
+      font-weight: bold;
+      z-index: 1000;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src='../data/img/icons/home.png' class="logo">
+  <img src='../data/img/icons/back.png' class='previous-button'>
+  <img src='../data/img/icons/next.png' class='next-button'>
+  <div class='top-line'></div>
+  <div class='bottom-line'>관리자용</div>
+  <div class='menubar'>
+    <div class='text' style="left: 10%;">추천메뉴</div>
+    <div class='text' style="left: 30%;">
+      <div class='chosen'>커피</div>
+    </div>
+    <div class='text' style="left: 50%;">디카페인</div>
+    <div class='text' style="left: 70%;">스무디/프라페</div>
+    <div class='text' style="left: 90%;">티(Tea)</div>
+  </div>
+  <div class='rectangle'>
+    <div class='popupText' style="top: 35%; left: 40%;">[</div>
+    <div class='popupText' style="color: #C62222; top: 35%; left: 45%;">(ICE)아메리카노</div>
+    <div class='popupText' style="top: 35%; left: 60%;">]</div>
+    <div class='popupText' style="top: 45%; left: 40%;">메뉴를</div>
+    <div class='popupText' style="color: #CB1778; top: 44.5%; left: 47%; font-size: 23px;">삭제</div>
+    <div class='popupText' style="top: 45%; left: 51%;">하시겠습니까?</div>
+    <button class="yes-button" style="top: 93%;">
+      네
+    </button>
+    <button class="no-button" style="top: 93%;">
+      아니오
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
