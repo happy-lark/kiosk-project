@@ -1,0 +1,147 @@
+#top-boundary,
+#bottom-boundary {
+  background-color: var(--main-color);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+/*조정하기*/
+#top-boundary {
+  top: 0;
+  height: 70px;
+}
+
+#bottom-boundary {
+  bottom: 0;
+  height: 70px;
+}
+
+#home_button {
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* 관리자용 문구 조절 */
+#bottom-boundary span {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  padding-top:10px;
+}
+
+
+.box{
+  background-color: #999090;
+  position: absolute;
+  left: 30px;
+  width:1000px;
+  height:580px;
+  top:130px;
+  left:15%;
+  border-radius: 30px;
+}
+
+#title, #subtitle{
+  color:white;
+  font-weight:bold;
+  display:flex;
+  justify-content: center;
+}
+
+#title{
+  padding-top:40px;
+  font-size:2em;
+}
+
+#subtitle{
+  padding-top:20px;
+  font-size:25px;
+}
+
+.options{
+  padding-top:40px;
+  color:black;
+  font-weight:bold;
+  font-size:25px;
+  padding-left:50px;
+}
+
+.choice-dropdown {
+  display: inline-block; /*새 줄에 시작 X */
+  position: relative;
+  padding-left:20px;
+  width:80px;
+}
+
+.dropbtn {
+  background-color: #f2f2f2; 
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size:20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/*hover 시 dropdown-content 보이도록 */
+.choice-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#save-button, #close-button {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  position: absolute; /* Position the buttons */
+  bottom: 20px; /* Distance from the bottom */
+}
+
+#save-button {
+  left: calc(50% - 175px); 
+  background-color: var(--main-color);
+}
+
+#close-button {
+  right: calc(50% - 175px); 
+  background-color: rgb(177, 187, 190);
+}
+
+#save-button a {
+  color:white;
+}
+
+#close-button a{
+  color:black;
+}
+
+a {
+  text-decoration: none;
+}
