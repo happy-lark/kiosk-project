@@ -11,4 +11,6 @@ body {
 
 :root {
   --main-color: rgb(171, 52, 52);
+  --shade-color-red:#B27B7B; 
+  --shade-color-black:#7D7878;
 }

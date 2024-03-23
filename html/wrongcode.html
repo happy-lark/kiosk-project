@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF=8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enter Barcode</title>
-  <link rel="stylesheet" href="../data/style/read_barcode.css" type="text/css"/>
+  <title>Popup:Wrong Code</title>
+  <link rel="stylesheet" href="../data/style/wrongcode.css" type="text/css"/>
   <link rel="stylesheet" href="../data/style/utility.css" type="text/css"/>
-  <link rel="stylesheet" href="../data/style/enterbarcode.css" type="text/css"/>
 </head>
 <body>
 
@@ -18,14 +17,22 @@
     </div>
   </div>
 
-  <div id="title-arrow-container">
-    <a href="../html/payment_coupon.html">
+  <div id="title-arrow-container"> 
       <div id="arrow_button">
         <img src="../data/img/icons/arrow_left.png" alt="화살표">
       </div>
-    </a>
   </div>
 
+  <div class="popup">
+    <img src="../data/img/icons/exclamation.png" alt="warning-sign" width="70px">
+    <div id="warning"> 없는 번호입니다!</div>
+    <div id="goback">다시 입력해주세요.</div>
+    <div id="return">
+      <a href="../html/enterbarcode.html">돌아가기</a>
+    </div>
+  </div>
+
+  <!--뒤에 흐린 부분 (enterbarcode 부분)-->
   <div id="explanation">
     바코드 번호를 직접 입력해주세요.
   </div>
@@ -55,8 +62,8 @@
       </div>
     </div>
   </div>
+  <!-- -->
 
   <div id="bottom-boundary"></div>
-  <script src="../js/barcodetest.js"></script>
 </body>
 </html>
