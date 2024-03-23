@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+  /* 배경색 변경 */
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 25%;
+  color: black;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.back-button {
+  position: absolute;
+  top: 8%;
+  left: 0%;
+  width: 50px;
+}
+
+.pay-button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* 버튼을 가운데 정렬 */
+  width: 250px;
+  height: 150px;
+  /* 버튼의 높이 변경 */
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: black;
+  cursor: pointer;
+  font-size: 23px;
+  margin-top: 20px;
+  /* 각 버튼 간격 조절 */
+}
+
+.pay-icon {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(20%, -50%);
+  width: 110px;
+  height: auto;
+}
+
+.top-line,
+.bottom-line {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background-color: #AB3434;
+  z-index: 999;
+}
+
+.top-line {
+  top: 0;
+}
+
+.bottom-line {
+  bottom: 0;
+}
