@@ -5,7 +5,11 @@
 2023.12 ~
 
 ## 사용 기술
-TBD
+Front-End:
+HTML, CSS, JS 
+
+Back-End:
+TBD 
 
 ## 상세 기능
 TBD
