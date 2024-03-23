@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>키오스크 관리자용 비번</title>
   <link href="../data/style/KIOSK_manage_pw.css" rel="stylesheet" type="text/css" />
-
+  <link rel="stylesheet" href="../data/style/utility.css" type="text/css"/>
 </head>
 
 <body>
-  <img src='../data/img/icons/home.png' class="logo">
-  <div class="top-line"></div>
-  <div class="bottom-line"></div>
-  <div class="admin-text">관리자용</div>
+  <div id="top-boundary"> 
+    <span>관리자용</span>
+    <div id="home_button">
+      <a href="../html/home.html">
+        <img src="../data/img/icons/home.png" alt="home" width="2.3%">
+      </a>
+    </div>
+  </div>
+
   <div class="rectangle">
     <div class="password-text">관리자 비밀번호</div>
     <br>
@@ -22,8 +26,11 @@
       <img src='../data/img/icons/visible.png' class='img2'>
     </div>
     <br>
-    <button class="confirm-button">확인</button>
+    <button class="confirm-button"><a href="./admin.html"> 확인 </a></button>
   </div>
+
+  <div id="bottom-boundary"></div>
+
 </body>
 
 </html>

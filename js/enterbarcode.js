@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
   enter.addEventListener('click', () => {
     if (input === passcode) {
       // Correct passcode entered, perform action here
-      window.location.href = "admin.html";
+      window.location.href = "payment_complete.html";
       // Reset input
       input = '';
     } else {

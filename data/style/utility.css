@@ -13,3 +13,7 @@ body {
   --shade-color-red:#B27B7B; 
   --shade-color-black:#7D7878;
 }
+
+a{
+  text-decoration: none;
+}
