@@ -1,5 +1,5 @@
 # Kiosk
-키오스크 제공 웹 프로젝트 (연습용)
+키오스크 제공 웹 프로젝트 (Coding Practice & In Progres)
 
 ## 기간
 2023.12 ~
